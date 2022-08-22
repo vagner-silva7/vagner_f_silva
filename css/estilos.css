@@ -1,0 +1,108 @@
+/* Alteração do box model */
+*,*::after, *::before { 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {       
+    /* tamanho minimo de cada pagina, 100vh, independente do conteudo pequeno da pagina, exemplo pagina contato */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Tag main (com display, flex-direction, min-height), ocupará todo o espaço necessario, para colocar o rodapé no final da pagina */
+main {
+    flex: 1;
+    height: 90vh;
+}
+
+.container { 
+    position: relative;
+    overflow: hidden;
+    height: 90vh;
+ 
+    font-style: italic;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.container h1 {
+    font-size: 3.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2
+}
+
+.container .apresentacao {
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2
+}
+
+.container .apresentacao li {
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    position: relative;
+    z-index: 2
+}
+
+.container .whatsapp {
+    font-size: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 5rem;
+    position: relative;
+    z-index: 2
+}
+
+/* configuração da imagem de fundo */
+.container:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 90vh;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url(/imagens/fundo.jpg);
+    background-repeat: no-repeat;
+    background-position: 5% 0;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+
+    width: 100vw;
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (max-width: 1100px) {
+    html { font-size: 10px;}
+}
+
+@media screen and (max-width: 1000px) {
+    html { font-size: 8px;}
+}
+
+@media screen and (max-width: 550px) {
+    html { font-size: 6px;}
+}
