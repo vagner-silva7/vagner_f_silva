@@ -22,7 +22,6 @@ main {
     position: relative;
     overflow: hidden;
     height: 90vh;
- 
     font-style: italic;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -42,6 +41,18 @@ main {
     margin-left: 4rem;
     margin-right: 4rem;
     margin-top: 5rem;
+
+    height: 35vh;
+
+    position: relative;
+    z-index: 2
+}
+
+.container .apresentacao p {
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 4rem;
+
     position: relative;
     z-index: 2
 }
@@ -50,6 +61,7 @@ main {
     font-size: 2.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
+
     position: relative;
     z-index: 2
 }
@@ -58,9 +70,25 @@ main {
     font-size: 2.5rem;
     margin-left: 4rem;
     margin-right: 4rem;
-    margin-top: 5rem;
+
+    height: 5vh;
+
     position: relative;
     z-index: 2
+    
+}
+
+.container .whatsapp button {
+    width: 100rem;
+    height: 7rem;
+    margin-left: 2rem;
+    margin-right: 4rem;    
+    background-color: black;
+}
+
+.container .whatsapp button a {
+    color: white;
+    text-decoration: none;
 }
 
 /* configuração da imagem de fundo */
@@ -95,14 +123,60 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 1100px) {
+.container .box {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+
+    height: 55vh;
+
+    position: relative;
+
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+}
+
+.container .box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200rem; /* 100 */
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform:rotateY(calc(var(--i) * 45deg))translateZ(100rem);  /* 45   400 */
+}
+
+.container .box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 90rem;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004);
+}
+
+@keyframes animate{
+    0% {
+        transform: perspective(
+            2000rem) /* 1600 */
+        rotateY(0deg);    
+    }
+    100% {
+        transform: perspective(
+            2000rem) /* 1600 */
+        rotateY(300deg) /* 360 */
+    }
+}
+
+
+@media screen and (max-width: 1800px) {
     html { font-size: 10px;}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     html { font-size: 8px;}
 }
 
 @media screen and (max-width: 550px) {
-    html { font-size: 6px;}
+    html { font-size: 5px;}
 }
