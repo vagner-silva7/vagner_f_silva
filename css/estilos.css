@@ -172,17 +172,17 @@ footer {
 /* ---------------------------------------------- */
 
 @media screen and (min-width: 1px) {
-    html { font-size: 3px;}
-}
-
-@media screen and (min-width: 500px) {
     html { font-size: 5px;}
 }
 
+@media screen and (min-width: 500px) {
+    html { font-size: 10px;}
+}
+
 @media screen and (min-width: 1000px) {
-    html { font-size: 8px;}
+    html { font-size: 15px;}
 }
 
 @media screen and (min-width: 1499px) {
-    html { font-size: 11px;}
+    html { font-size: 20px;}
 }
