@@ -18,7 +18,7 @@ main {flex: 1;}
 
 .cabecalho {
     background-color: black;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: white;
     width: 100%;
@@ -66,7 +66,6 @@ main {flex: 1;}
 }
 
 .container .whatsapp{
-    font-size: 2rem;
     margin-left: 2rem;
     margin-right: 4rem;
     margin-top: 5rem;
@@ -86,7 +85,7 @@ main {flex: 1;}
 .container .whatsapp button a {
     color: white;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-left: 2rem;
     margin-right: 4rem;
     margin-top: 5rem;
@@ -190,246 +189,12 @@ footer {
 
 @media screen and (min-width: 640px) {
     html { font-size: 10px;}
-
-    /* configuração da imagem de fundo */
-    .container:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 145rem;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url(/imagens/fundo.jpg);
-        background-repeat: no-repeat;
-        background-position: 5% 0;
-        background-size: cover;
-    }
-
-    /* formatar slide 3*/
-
-    .container .slide { 
-        position: relative;
-        background-color: white;
-        opacity: 1;
-        overflow: hidden;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        border-radius: 2rem;
-        height: 30rem;
-        border: 2px solid black;
-        z-index: 1;
-    }
-
-    .container .slide .box{
-        top: 25rem; 
-        width: 12rem; 
-        height: 12rem; 
-        margin: auto;
-        transform-style: preserve-3d;
-        animation: animate 20s linear infinite;
-        z-index: 1;
-    }
-
-    @keyframes animate{
-            0% {
-                transform: perspective(
-                    100rem)
-                rotateY(0deg);    
-            }
-            100% {
-                transform: perspective(
-                    100rem)
-                rotateY(360deg)
-            }
-    }
-
-    .container .slide .box span{
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        width: 100%;
-        transform-origin: center;
-        transform-style: preserve-3d;
-        transform:rotateY(calc(var(--i) * 45deg))translateZ(300px);
-        z-index: 1;
-    }
-
-    .container .slide .box span img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004); 
-        z-index: 1;
-    } 
 }
 
 @media screen and (min-width: 1280px) {
     html { font-size: 12px;}
-
-    /* configuração da imagem de fundo */
-    .container:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 110rem;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url(/imagens/fundo.jpg);
-        background-repeat: no-repeat;
-        background-position: 5% 0;
-        background-size: cover;
-    }
-
-    /* formatar slide 3*/
-
-    .container .slide { 
-        position: relative;
-        background-color: white;
-        opacity: 1;
-        overflow: hidden;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        border-radius: 2rem;
-        height: 30rem;
-        border: 2px solid black;
-        z-index: 1;
-    }
-
-    .container .slide .box{
-        top: 25rem; 
-        width: 12rem; 
-        height: 12rem; 
-        margin: auto;
-        transform-style: preserve-3d;
-        animation: animate 20s linear infinite;
-        z-index: 1;
-    }
-
-    @keyframes animate{
-            0% {
-                transform: perspective(
-                    100rem)
-                rotateY(0deg);    
-            }
-            100% {
-                transform: perspective(
-                    100rem)
-                rotateY(360deg)
-            }
-    }
-
-    .container .slide .box span{
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        width: 100%;
-        transform-origin: center;
-        transform-style: preserve-3d;
-        transform:rotateY(calc(var(--i) * 45deg))translateZ(300px);
-        z-index: 1;
-    }
-
-    .container .slide .box span img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004); 
-        z-index: 1;
-    } 
 }
 
 @media screen and (min-width: 1920px) {
     html { font-size: 14px;}
-
-    /* configuração da imagem de fundo */
-    .container:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 103rem;
-        z-index: 1;
-        opacity: 0.4;
-        background-image: url(/imagens/fundo.jpg);
-        background-repeat: no-repeat;
-        background-position: 5% 0;
-        background-size: cover;
-    }
-
-    /* formatar slide 3*/
-
-    .container .slide { 
-        position: relative;
-        background-color: white;
-        opacity: 1;
-        overflow: hidden;
-        margin-left: 4rem;
-        margin-right: 4rem;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        border-radius: 2rem;
-        height: 30rem;
-        border: 2px solid black;
-        z-index: 1;
-    }
-
-    .container .slide .box{
-        top: 25rem; 
-        width: 12rem; 
-        height: 12rem; 
-        margin: auto;
-        transform-style: preserve-3d;
-        animation: animate 20s linear infinite;
-        z-index: 1;
-    }
-
-    @keyframes animate{
-            0% {
-                transform: perspective(
-                    100rem)
-                rotateY(0deg);    
-            }
-            100% {
-                transform: perspective(
-                    100rem)
-                rotateY(360deg)
-            }
-    }
-
-    .container .slide .box span{
-        position: absolute;
-        top: 5rem;
-        left: 0;
-        width: 100%;
-        transform-origin: center;
-        transform-style: preserve-3d;
-        transform:rotateY(calc(var(--i) * 45deg))translateZ(300px);
-        z-index: 1;
-    }
-
-    .container .slide .box span img{
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        width: 100%;
-        -webkit-box-reflect: below 2px linear-gradient(transparent, transparent, #0004); 
-        z-index: 1;
-    } 
 }
